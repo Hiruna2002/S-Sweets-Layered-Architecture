@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorHomePage" prefHeight="500.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.s_sweets.controller.DashboardController">
+   <children>
+      <AnchorPane fx:id="ancDashboard" accessibleRole="BUTTON" layoutY="-6.0" prefHeight="712.0" prefWidth="282.0" style="-fx-background-color: #b2abab;" stylesheets="@../css/Style.css">
+         <children>
+            <VBox layoutX="68.0" layoutY="24.0" prefHeight="629.0" prefWidth="188.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnCustomer" mnemonicParsing="false" onAction="#btnCustomerNavigateTo" prefHeight="33.0" prefWidth="202.0" style="-fx-background-radius: 30px;" text="Customer">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnOrders" mnemonicParsing="false" onAction="#btnOrdersOnNavigateTo" prefHeight="33.0" prefWidth="188.0" style="-fx-background-radius: 30px;" text="Orders">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnPayment" mnemonicParsing="false" onAction="#btnPaymentOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Payment">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnDelivery" mnemonicParsing="false" onAction="#btnDeliveryOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Delivery">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnProduct" mnemonicParsing="false" onAction="#btnProductOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Product">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnCategory" mnemonicParsing="false" onAction="#btnCategoryOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Category">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnIngredient" mnemonicParsing="false" onAction="#btnIngredientOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Ingredient">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnInven" mnemonicParsing="false" onAction="#btnInvenOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Inventory">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnWarehouse" mnemonicParsing="false" onAction="#btnWarehouseOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Warehouse">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnEmployee" mnemonicParsing="false" onAction="#btnEmployeeOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Employee">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnSupplier" mnemonicParsing="false" onAction="#btnSupplierOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Supplier">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnFeedback" mnemonicParsing="false" onAction="#btnFeedbackOnNavigateTo" prefHeight="33.0" prefWidth="189.0" style="-fx-background-radius: 30px;" text="Feedback">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="20.0" layoutY="33.0">
+               <image>
+                  <Image url="@../images/icons8-customer-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="20.0" layoutX="23.0" layoutY="91.0">
+               <image>
+                  <Image url="@../images/icons8-order-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="20.0" layoutX="23.0" layoutY="143.0">
+               <image>
+                  <Image url="@../images/icons8-payment-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="20.0" layoutX="23.0" layoutY="202.0">
+               <image>
+                  <Image url="@../images/icons8-delivery-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="20.0" layoutY="263.0">
+               <image>
+                  <Image url="@../images/icons8-product-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="26.0" layoutX="20.0" layoutY="317.0">
+               <image>
+                  <Image url="@../images/icons8-category-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="20.0" layoutY="382.0">
+               <image>
+                  <Image url="@../images/icons8-cookies-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="20.0" layoutY="440.0">
+               <image>
+                  <Image url="@../images/icons8-inventory-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="20.0" layoutX="23.0" layoutY="498.0">
+               <image>
+                  <Image url="@../images/icons8-warehouse-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="15.0" layoutY="550.0">
+               <image>
+                  <Image url="@../images/icons8-employee-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="20.0" layoutY="613.0">
+               <image>
+                  <Image url="@../images/icons8-supplier-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="26.0" layoutX="20.0" layoutY="667.0">
+               <image>
+                  <Image url="@../images/icons8-feedback-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ancHome" layoutX="276.0" layoutY="-14.0" prefHeight="720.0" prefWidth="1128.0" style="-fx-background-color: #ddd19d;">
+         <children>
+            <Label layoutX="400.0" layoutY="36.0" text="Welcome To Sweets">
+               <font>
+                  <Font name="Chilanka Regular" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="327.0" fitWidth="282.0" layoutX="400.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/360_F_972526248_Mjk40JW27YntV992v28I0MrrtGaMlIYt.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

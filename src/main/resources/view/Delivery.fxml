@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ancDelivaryPage" prefHeight="654.0" prefWidth="1118.0" style="-fx-background-color: #ddd19d;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.s_sweets.controller.DeliveryController">
+   <children>
+      <TextField fx:id="txtDeliId" layoutX="298.0" layoutY="95.0" prefHeight="29.0" prefWidth="309.0" promptText="DeliId" />
+      <DatePicker fx:id="txtDeliDate" layoutX="298.0" layoutY="239.0" prefHeight="29.0" prefWidth="309.0" promptText="Deli Date" />
+      <TextField fx:id="txtDeliRyderName" layoutX="298.0" layoutY="146.0" prefHeight="29.0" prefWidth="309.0" promptText="Delivery Ryder Name" />
+      <TextField fx:id="txtDeliAddress" layoutX="298.0" layoutY="192.0" prefHeight="29.0" prefWidth="309.0" promptText="Delivery Address" />
+      <TableView fx:id="tblDelivary" layoutX="51.0" layoutY="416.0" onMouseClicked="#onClickTable" prefHeight="202.0" prefWidth="1010.0">
+        <columns>
+          <TableColumn fx:id="colDeliId" prefWidth="157.0" text="DeliId" />
+          <TableColumn fx:id="colOrderId" prefWidth="148.0" text="OrderId" />
+            <TableColumn fx:id="colDeliRyderName" prefWidth="176.0" text="DeliRyderName" />
+            <TableColumn fx:id="colDeliAddress" prefWidth="178.0" text="DeliAddress" />
+            <TableColumn fx:id="colDeliDate" prefWidth="172.0" text="DeliDate" />
+            <TableColumn fx:id="colDeliAmount" prefWidth="178.0" text="DeliAmount" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="cbOrderId" layoutX="298.0" layoutY="288.0" prefHeight="29.0" prefWidth="309.0" />
+      <AnchorPane layoutX="-1.0" prefHeight="49.0" prefWidth="1118.0" style="-fx-background-color: #c9c1c1;">
+         <children>
+            <Label layoutX="508.0" layoutY="10.0" text="Delivery ">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnSave" layoutX="901.0" layoutY="92.0" mnemonicParsing="false" onAction="#btnSaveOnClickTo" prefHeight="39.0" prefWidth="98.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Save">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnShow" layoutX="901.0" layoutY="152.0" mnemonicParsing="false" onAction="#btnShowOnClickTo" prefHeight="39.0" prefWidth="98.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Show">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="901.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnUpdateOnClickTo" prefHeight="39.0" prefWidth="98.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Update">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="901.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnDeleteOnClickTo" prefHeight="39.0" prefWidth="98.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Delete">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="57.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Id">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Rider Name">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Date">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Address">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDeliAmount" layoutX="298.0" layoutY="338.0" prefHeight="29.0" prefWidth="309.0" promptText="Deli Amount" />
+      <Text layoutX="57.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Amount">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

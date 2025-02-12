@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancWarehouse" prefHeight="654.0" prefWidth="1118.0" style="-fx-background-color: #ddd19d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.s_sweets.controller.WarehouseController">
+   <children>
+      <VBox layoutX="57.0" layoutY="90.0" prefHeight="131.0" prefWidth="540.0" spacing="15.0">
+         <children>
+            <HBox prefHeight="60.0" prefWidth="540.0" spacing="60.0">
+               <children>
+                  <Label text="Warehouse Id">
+                     <font>
+                        <Font name="DejaVuMathTeXGyre-Regular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtWareId" prefHeight="39.0" prefWidth="346.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="53.0" prefWidth="540.0" spacing="104.0">
+               <children>
+                  <Label text="Location">
+                     <font>
+                        <Font name="DejaVuMathTeXGyre-Regular" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtLocation" prefHeight="39.0" prefWidth="346.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tblWarehouse" layoutX="57.0" layoutY="312.0" onMouseClicked="#onClickTable" prefHeight="326.0" prefWidth="957.0">
+        <columns>
+          <TableColumn fx:id="colWareId" prefWidth="464.0" text="Warehouse Id" />
+          <TableColumn fx:id="colLocation" prefWidth="541.0" text="Location" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="49.0" prefWidth="1118.0" style="-fx-background-color: #c9c1c1;">
+         <children>
+            <Label layoutX="525.0" layoutY="10.0" prefHeight="21.0" prefWidth="143.0" text="Warehouse ">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnSave" layoutX="852.0" layoutY="84.0" mnemonicParsing="false" onAction="#btnSaveOnNavigateTo" prefHeight="38.0" prefWidth="107.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Save">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnShow" layoutX="852.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnShowOnNavigateTo" prefHeight="39.0" prefWidth="107.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Show">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="852.0" layoutY="189.0" mnemonicParsing="false" onAction="#btnUpdateOnNavigateTo" prefHeight="38.0" prefWidth="107.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Update">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="852.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnDeleteOnNavigateTo" prefHeight="39.0" prefWidth="107.0" style="-fx-background-radius: 30px; -fx-background-color: lightgray;" text="Delete">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

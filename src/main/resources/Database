@@ -1,0 +1,124 @@
+CREATE DATABASE S_Sweets;
+
+USE S-Sweets;
+
+CREATE TABLE Admin(
+	UserName VARCHAR(20),
+	Password VARCHAR(30),
+	Confirm_Password VARCHAR(30),
+	Email VARCHAR(100)
+);
+
+CREATE TABLE Customer(
+	Cus_id VARCHAR(10) PRIMARY KEY,
+	Name VARCHAR(20),
+	Address VARCHAR(30),
+	PhoneNo VARCHAR(10)
+);
+
+CREATE TABLE Delivery(
+	DeliId VARCHAR(10) PRIMARY KEY,
+	OrderId VARCHAR(10),
+	DeliRyderName VARCHAR(20),
+	DeliAddress VARCHAR(50),
+	DeliDate DATE,
+	DeliAmount INT
+);
+
+CREATE TABLE Employee (
+    Emp_id VARCHAR(10) PRIMARY KEY,
+    Ware_id VARCHAR(10),
+    Emp_name VARCHAR(20),
+    PhoneNo VARCHAR(10),
+    Salary INT
+);
+
+CREATE TABLE Feedback (
+    Feedback_id VARCHAR(10) PRIMARY KEY,
+    Pro_id VARCHAR(10),
+    Cus_id VARCHAR(10),
+    Description VARCHAR(200)
+);
+
+CREATE TABLE Ingredients (
+    Ing_id VARCHAR(10) PRIMARY KEY,
+    Ing_name VARCHAR(100),
+    Exp_date DATE,
+    Qty VARCHAR(50),
+    Unit VARCHAR(20)
+);
+
+CREATE TABLE Inventory (
+    Inven_id VARCHAR(10) PRIMARY KEY,
+    Ing_id VARCHAR(10),
+    Ware_id VARCHAR(10)
+);
+
+CREATE TABLE Orders (
+    OrderId VARCHAR(10) PRIMARY KEY,
+    CusId VARCHAR(10),
+    ProId VARCHAR(10),
+    Item VARCHAR(50),
+    Qty VARCHAR(50),
+    OrderDate DATE,
+    DueDate DATE,
+    Amount VARCHAR(50)
+);
+
+CREATE TABLE Payments (
+    PayId VARCHAR(10) PRIMARY KEY,
+    OrderId VARCHAR(10),
+    PayDate DATE DEFAULT,
+    PayMethod VARCHAR(10),
+    PayAmount INT
+);
+
+CREATE TABLE Products (
+    Pro_id VARCHAR(10) PRIMARY KEY,
+    Cat_id VARCHAR(10),
+    Pro_name VARCHAR(20),
+    Price INT,
+    Qty INT
+);
+
+CREATE TABLE Suppliers (
+    SupId VARCHAR(10) PRIMARY KEY,
+    ProId VARCHAR(10),
+    SupName VARCHAR(20),
+    SupDate DATE,
+    SupAmount INT,
+    SupContactNo INT
+);
+
+CREATE TABLE Warehouse (
+    Ware_Id VARCHAR(10) PRIMARY KEY,
+    Location VARCHAR(30)
+);
+
+CREATE TABLE Product_category(
+    Cat_id VARCHAR(10) PRIMARY KEY,
+    Cat_name VARCHAR(50)
+);
+
+CREATE TABLE Order_detail(
+    orderId VARCHAR(10),
+    proId VARCHAR(10),
+    cusId VARCHAR(10),
+    amount int
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
